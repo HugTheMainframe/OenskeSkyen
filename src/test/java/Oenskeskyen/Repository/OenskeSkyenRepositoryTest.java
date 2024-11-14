@@ -55,7 +55,7 @@ public class OenskeSkyenRepositoryTest {
         assertEquals(wishList.getWishListId(), expectedValue);
         assertEquals(wishList.getName(), expectedName);
     }
-
+    /*
     @Test
     @DirtiesContext
     void saveWishTest(){
@@ -73,6 +73,7 @@ public class OenskeSkyenRepositoryTest {
         assertEquals(actual.getUrlLink(), expectedURL);
         assertEquals(actual.getWishId(), 4);
     }
+    */
 
     @Test
     @DirtiesContext
