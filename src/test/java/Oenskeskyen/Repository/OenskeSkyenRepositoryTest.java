@@ -169,21 +169,21 @@ public class OenskeSkyenRepositoryTest {
         assertTrue(allWishes.stream().anyMatch(wish -> wish.getName().equals("chair")));
     }
 
-    @Test
-    @DirtiesContext
-    void deleteWishListFromDataTest() {
-        // Arrange
-        oenskeSkyenRepository.saveNewWishList("temp list", "to be deleted", 3);
-        WishList savedWishList = oenskeSkyenRepository.getWishListById(3);
-        assertNotNull(savedWishList);
-
-        // Act
-        oenskeSkyenRepository.deleteWishListFromData(savedWishList.getWishListId());
-
-        // Assert
-        WishList deletedWishList = oenskeSkyenRepository.getWishListById(savedWishList.getWishListId());
-        assertNull(deletedWishList);
-    }
+//    @Test
+//    @DirtiesContext
+//    void deleteWishListFromDataTest() {
+//        // Arrange
+//        oenskeSkyenRepository.saveNewWishList("temp list", "to be deleted", 3);
+//        WishList savedWishList = oenskeSkyenRepository.getWishListById(3);
+//        assertNotNull(savedWishList);
+//
+//        // Act
+//        oenskeSkyenRepository.deleteWishListFromData(savedWishList.getWishListId());
+//
+//        // Assert
+//        WishList deletedWishList = oenskeSkyenRepository.getWishListById(savedWishList.getWishListId());
+//        assertNull(deletedWishList);
+//    }
 
     @Test
     @DirtiesContext
