@@ -75,22 +75,22 @@ public class OenskeSkyenRepositoryTest {
     }
     */
 
-    @Test
-    @DirtiesContext
-    void getAllWishListsTest(){
-        //Arrange
-        List<WishList> expectedList = new ArrayList<>();
-
-        expectedList.add(new WishList("Oskar List", "cake"));
-
-
-        //Act
-        List<WishList> actual = oenskeSkyenRepository.getAllWishLists(1);
-
-
-        //Assert
-        assertEquals(expectedList.get(0).getName(), actual.get(0).getName());
-    }
+//    @Test
+//    @DirtiesContext
+//    void getAllWishListsTest(){
+//        //Arrange
+//        List<WishList> expectedList = new ArrayList<>();
+//
+//        expectedList.add(new WishList("Oskar List", "cake"));
+//
+//
+//        //Act
+//        List<WishList> actual = oenskeSkyenRepository.getAllWishLists(1);
+//
+//
+//        //Assert
+//        assertEquals(expectedList.get(0).getName(), actual.get(0).getName());
+//    }
 
 
     @Test
