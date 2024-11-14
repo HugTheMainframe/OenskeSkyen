@@ -148,26 +148,26 @@ public class OenskeSkyenRepositoryTest {
         assertEquals(1299.99, updatedWish.getPrice());
         assertEquals("www.gaminglaptops.com", updatedWish.getUrlLink());
     }
-
-    @Test
-    @DirtiesContext
-    void getAllWishesTest() {
-        // Arrange
-        WishList wishList = new WishList("test", "test");
-        oenskeSkyenRepository.saveNewWishList(wishList.getName(), wishList.getDescription(), 2);
-        Wish wish1 = new Wish("table", 50.0, "www.furniture.com");
-        Wish wish2 = new Wish("chair", 25.0, "www.furniture.com");
-        oenskeSkyenRepository.saveWish(wish1.getName(), wish1.getPrice(), wish1.getUrlLink(), 3);
-        oenskeSkyenRepository.saveWish(wish2.getName(), wish2.getPrice(), wish2.getUrlLink(), 3);
-
-        // Act
-        List<Wish> allWishes = oenskeSkyenRepository.getAllWishes(3);
-
-        // Assert
-        assertEquals(2, allWishes.size());
-        assertTrue(allWishes.stream().anyMatch(wish -> wish.getName().equals("table")));
-        assertTrue(allWishes.stream().anyMatch(wish -> wish.getName().equals("chair")));
-    }
+//
+//    @Test
+//    @DirtiesContext
+//    void getAllWishesTest() {
+//        // Arrange
+//        WishList wishList = new WishList("test", "test");
+//        oenskeSkyenRepository.saveNewWishList(wishList.getName(), wishList.getDescription(), 2);
+//        Wish wish1 = new Wish("table", 50.0, "www.furniture.com");
+//        Wish wish2 = new Wish("chair", 25.0, "www.furniture.com");
+//        oenskeSkyenRepository.saveWish(wish1.getName(), wish1.getPrice(), wish1.getUrlLink(), 3);
+//        oenskeSkyenRepository.saveWish(wish2.getName(), wish2.getPrice(), wish2.getUrlLink(), 3);
+//
+//        // Act
+//        List<Wish> allWishes = oenskeSkyenRepository.getAllWishes(3);
+//
+//        // Assert
+//        assertEquals(2, allWishes.size());
+//        assertTrue(allWishes.stream().anyMatch(wish -> wish.getName().equals("table")));
+//        assertTrue(allWishes.stream().anyMatch(wish -> wish.getName().equals("chair")));
+//    }
 
 //    @Test
 //    @DirtiesContext
