@@ -41,11 +41,11 @@ create table Wishlist_Wishes(
 );
 
 insert into usercustomer
-(Fullname, Mail, UserPassWord) VALUES ('Oskar August', 'Oskar@Kea.com', 'Oskar1234');
+(FullName, Mail, UserPassWord) VALUES ('Oskar August', 'Oskar@Kea.com', 'Oskar1234');
 insert into usercustomer
-(Fullname, Mail, UserPassWord) VALUES ('Rasmus Carlsen', 'Rasmus@Kea.com', 'Rasmus1234');
+(FullName, Mail, UserPassWord) VALUES ('Rasmus Carlsen', 'Rasmus@Kea.com', 'Rasmus1234');
 insert into usercustomer
-(Fullname, Mail, UserPassWord) VALUES ('Lucas Modin', 'Lucas@Kea.com', 'Lucas1234');
+(FullName, Mail, UserPassWord) VALUES ('Lucas Modin', 'Lucas@Kea.com', 'Lucas1234');
 
 insert into WishList (WishListName, WishListDescription, UserID) VALUES ('Lucas List', 'weddinglist', 3) ,('Oskar List', 'cake', 1);
 
